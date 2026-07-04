@@ -28,6 +28,6 @@ public class Max {
             }
         }
 
-        System.out.println("Maximum = " + max);
+        System.out.println("Maximum is = " + max);
     }
 }
