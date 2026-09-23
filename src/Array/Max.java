@@ -1,33 +1,13 @@
-package Array;
-
-import java.util.*;
-
-public class Max {
-
+class Max {
     public static void main(String[] args) {
+        int arr[]={2,5,7,34,1};
+        int max = arr[0];
 
-        int[] arr = {5, 2, 9, 1, 7};
-
-        int max = -1;
-
-        for (int i = 0; i < arr.length; i++) {
-
-            boolean isLargest = true;
-
-            for (int j = 0; j < arr.length; j++) {
-
-                if (arr[j] > arr[i]) {
-                    isLargest = false;
-                    break;
-                }
-            }
-
-            if (isLargest) {
-                max = arr[i];
-                break;
+        for(int i = 0;i<arr.length;i++){
+            if(arr[i]>max){
+                max=arr[i];
             }
         }
-
-        System.out.println("Maximum is = " + max);
+        System.out.println("largest elemnt is : "+max);
     }
 }
